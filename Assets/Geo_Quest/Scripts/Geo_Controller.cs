@@ -5,6 +5,7 @@ using UnityEngine.Experimental.AI;
 
 public class Geo_Controller : MonoBehaviour {
     private string Var2 = "Good Morning ";
+    int Var3 = 3;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class Geo_Controller : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log (1 + Var3);
+        Var3++;
     }
 }
