@@ -19,5 +19,7 @@ public class Geo_Controller : MonoBehaviour {
     {
         Debug.Log (1 + Var3);
         Var3++;
+
+        transform.position += new Vector3(0.005f, 0, 0);
     }
 }
