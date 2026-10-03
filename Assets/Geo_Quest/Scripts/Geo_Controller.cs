@@ -6,14 +6,17 @@ using UnityEngine.Experimental.AI;
 public class Geo_Controller : MonoBehaviour {
     private string Var2 = "Good Morning ";
     int Var3 = 3;
+    private Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+        
         string Var1 = "World";
         Debug.Log(Var2 + Var1);
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -22,5 +25,21 @@ public class Geo_Controller : MonoBehaviour {
             transform.position += new Vector3(0, 1, 0);
         }
 
-    }
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.position += new Vector3(0, 1, 0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            transform.position += new Vector3(0, -1, 0);
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            transform.position += new Vector3(0, -1, 0);
+        }
+
+        }
+    
 }
