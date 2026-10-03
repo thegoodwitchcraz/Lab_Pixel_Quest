@@ -25,7 +25,7 @@ public class Geo_Controller : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
-            rb.velocity = new Vector2(-1, rb.velocity.y);
+            rb.velocity = new Vector2(1, rb.velocity.y);
         }
             /*
             if (Input.GetKeyUp(KeyCode.W))
