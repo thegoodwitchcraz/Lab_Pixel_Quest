@@ -29,8 +29,10 @@ public class Geo_Controller : MonoBehaviour {
 
         }
 
+    public string nextLevel = "Level_2";
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         switch (collision.tag)
         {
             case "Death":
@@ -39,8 +41,8 @@ public class Geo_Controller : MonoBehaviour {
                     SceneManager.LoadScene(thisLevel);
                     break;
                 }
-            case "Lose":
-                {
+            case "Finish":{
+                    SceneManager.LoadScene(nextLevel);
                     break;
                 }
         }
