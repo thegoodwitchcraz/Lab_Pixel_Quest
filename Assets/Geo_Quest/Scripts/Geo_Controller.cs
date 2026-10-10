@@ -2,51 +2,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.AI;
+using UnityEngine.SceneManagement;
 
 public class Geo_Controller : MonoBehaviour {
     int variable1 = 2;
     private string Var2 = "Good Morning ";
     int Var3 = 3;
 
-    private Rigidbody2D rb;
+    private Rigidbody2D rb2d;
     public int speed = 5;
 
     // Start is called before the first frame update
-    void Start() {
-        rb = GetComponent<Rigidbody2D>();
+    public void Start() {
+        rb2d = GetComponent<Rigidbody2D>();
         
         //string Var1 = "World";
         //Debug.Log(Var2 + Var1);
     }
     
     // Update is called once per frame
-    void Update()
-    {
+     void Update() {
         float xInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
-            /*
-            if (Input.GetKeyUp(KeyCode.W))
-            {
-                transform.position += new Vector3(0, 1, 0);
-            }
+        xInput *= variable1;
+        rb2d.velocity = new Vector2(xInput * speed, rb2d.velocity.y);
 
-            if (Input.GetKey(KeyCode.W))
-            {
-                transform.position += new Vector3(0, 1, 0);
-            }
-
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                transform.position += new Vector3(0, -1, 0);
-            }
-
-            if (Input.GetKey(KeyCode.S))
-            {
-                transform.position += new Vector3(0, -1, 0);
-            }
-            */
 
         }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        switch (collision.tag)
+        {
+            case "Death":
+                {
+                    string thisLevel = SceneManager.GetActiveScene().name;
+                    SceneManager.LoadScene(thisLevel);
+                    break;
+                }
+            case "Lose":
+                {
+                    break;
+                }
+        }
+    }
 
 }

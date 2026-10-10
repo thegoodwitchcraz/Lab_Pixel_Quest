@@ -1500,7 +1500,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.3, y: 0.3}
     newSize: {x: 0.64, y: 12.11}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -1550,7 +1550,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e488b17278e290a43bf07a706f43b532, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4435e8c60d71ecb44bd92b45fa0b0dc6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2609,7 +2609,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 493f848e85b91cc418a0614cfb17a1bc, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9599097, g: 0.7216981, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
@@ -2772,7 +2772,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.3, y: 0.3}
     newSize: {x: 28.47, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -2822,7 +2822,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e488b17278e290a43bf07a706f43b532, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4435e8c60d71ecb44bd92b45fa0b0dc6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2986,7 +2986,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.3, y: 0.3}
     newSize: {x: 0.64, y: 12.11}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -3036,7 +3036,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: e488b17278e290a43bf07a706f43b532, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4435e8c60d71ecb44bd92b45fa0b0dc6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
