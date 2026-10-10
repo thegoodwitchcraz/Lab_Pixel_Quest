@@ -4,9 +4,12 @@ using UnityEngine;
 using UnityEngine.Experimental.AI;
 
 public class Geo_Controller : MonoBehaviour {
+    int variable1 = 2;
     private string Var2 = "Good Morning ";
     int Var3 = 3;
+
     private Rigidbody2D rb;
+    public int speed = 5;
 
     // Start is called before the first frame update
     void Start() {
@@ -20,7 +23,7 @@ public class Geo_Controller : MonoBehaviour {
     void Update()
     {
         float xInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(xInput, rb.velocity.y);
+        rb.velocity = new Vector2(xInput * speed, rb.velocity.y);
             /*
             if (Input.GetKeyUp(KeyCode.W))
             {
