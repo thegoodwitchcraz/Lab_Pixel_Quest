@@ -19,14 +19,8 @@ public class Geo_Controller : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            rb.velocity = new Vector2(-1, rb.velocity.y);
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            rb.velocity = new Vector2(1, rb.velocity.y);
-        }
+        float xInput = Input.GetAxis("Horizontal");
+        rb.velocity = new Vector2(xInput, rb.velocity.y);
             /*
             if (Input.GetKeyUp(KeyCode.W))
             {
