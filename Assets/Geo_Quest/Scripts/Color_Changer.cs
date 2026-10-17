@@ -12,7 +12,6 @@ public class NewBehaviourScript : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         SpRen = GetComponent<SpriteRenderer>();
-        Color hue = SpRen.color;
     }
 
     // Update is called once per frame
@@ -20,23 +19,23 @@ public class NewBehaviourScript : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Color hue = Color.red;
+            SpRen.color = Color.red;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Color hue = Color.blue;
+            SpRen.color = Color.blue;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            Color hue = Color.white;
+            SpRen.color = Color.cyan;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            Color hue = Color.green;
+            SpRen.color = Color.green;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            Color hue = Color.white;
+            SpRen.color = Color.white;
         }
     }
 }
