@@ -20,7 +20,7 @@ public class ButtonActions : MonoBehaviour
         root.Q<Button>("btn7").clicked += () => NumberClicked(7);
         root.Q<Button>("btn8").clicked += () => NumberClicked(8);
         root.Q<Button>("btn9").clicked += () => NumberClicked(9);
-        root.Q<Button>("btnsetting").clicked += settingClicked;
+        //root.Q<Button>("btnsetting").clicked += settingClicked;
         root.Q<Button>("btnSuper").clicked += SuperClicked;
         root.Q<Button>("btnpause").clicked += SuperClicked;
         root.Q<Button>("btnheart").clicked += SuperClicked;
